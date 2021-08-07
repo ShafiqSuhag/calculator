@@ -58,6 +58,30 @@
             /* display: flex;
             justify-content: flex-end; */
         }
+        .digits-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin-top: 20px;
+            margin-bottom: auto;
+        }
+        .digit{
+            
+            height: 50px;
+            width: 50px;
+            background-color: rgb(77, 32, 24);
+            border-radius: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: bold;
+
+        }
     </style>
 </head>
 <body>
@@ -76,7 +100,60 @@
             </div> -->
             <!-- <input type="text" class="calculator-input"> -->
             <input type="text"  id="inputVal"  oninput="this.value = this.value.replace(/[^0-9.+*/-]/g, '');" class="calculator-input" />
-            
+            <div class="digits-container">
+                <!-- line 1 -->
+                <div class="digit">
+                    C
+                </div>
+                <div class="digit">
+                    (
+                </div>
+                <div class="digit">
+                    )
+                </div>
+                <div class="digit">
+                    =
+                </div>
+                <!-- line 2 -->
+                <div class="digit">
+                   9
+                </div>
+                <div class="digit">
+                    8
+                </div>
+                <div class="digit">
+                    7
+                </div>
+                <div class="digit">
+                    6
+                </div>
+                <!-- line 2 -->
+                <div class="digit">
+                   5
+                </div>
+                <div class="digit">
+                    4
+                </div>
+                <div class="digit">
+                    3
+                </div>
+                <div class="digit">
+                    2
+                </div>
+                <!-- line 3 -->
+                <div class="digit">
+                   1
+                </div>
+                <div class="digit">
+                    0
+                </div>
+                <!-- <div class="digit">
+                   
+                </div>
+                <div class="digit">
+                    
+                </div> -->
+            </div>
         </div>
         <footer>
             Developed by - <i>Shafiq Suhag</i>  
