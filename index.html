@@ -8,8 +8,13 @@
     <style>
         main{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+        }
+        footer{
+            padding: 20px 10px ;
         }
         .calculator-container{
             width: 300px;
@@ -73,7 +78,11 @@
             <input type="text"  id="inputVal"  oninput="this.value = this.value.replace(/[^0-9.+*/-]/g, '');" class="calculator-input" />
             
         </div>
+        <footer>
+            Developed by - <i>Shafiq Suhag</i>  
+        </footer>
     </main>
+    
     
     
     <script>
